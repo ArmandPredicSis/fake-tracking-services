@@ -8,7 +8,7 @@ module FakeTrackingServices
   class App < Sinatra::Application
     set :port, 10002
 
-    get '/events' do
+    get '/engage' do
       api_key = params['api_key']
       signature = params['sig']
       format = params['format']
